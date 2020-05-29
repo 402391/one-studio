@@ -26,9 +26,12 @@
   }
 
 .avatar{
-    background-image: url(img/logo.jpg);
+    background-image: url('.../img/logo.jpg');
 }
 
+main{
+    height: 2160px;
+}
 
 body{
     font-family: 'Nunito', sans-serif;
@@ -38,10 +41,9 @@ body{
     
 }
 
-.slidershow{
+.slideshow{
     width: 800px;
     height: 800px;
-    overflow: hidden;
 }
 
 .middle{
@@ -107,7 +109,8 @@ h1, h2, h3{
 }
 
 ul{
-    font-size: 1em;
+    padding-left: 4em;
+    font-size: 1.25em;
     color: #fff;
 }
 

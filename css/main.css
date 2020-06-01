@@ -1,32 +1,38 @@
-.topnav {
+.menu {
     background-color: #000;
     overflow: hidden;
-  }
+}
 
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    padding: 40px 10px;
+/* Style the links inside the navigation bar */
+.menu a {
+    padding: 45px 10px;
     float: right;
     color: #fff;
     text-align: center;
     display: grid;
     grid-template-columns: auto 40px;
     text-decoration: none;
-    font-size: 17px;
-  }
+    font-size: 18px;
+}
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
+/* Change the color of links on hover */
+.menu a:hover {
     color: grey;
-  }
+}
 
-  /* Add a color to the active/current link */
-  .topnav a.active {
+/* Add a color to the active/current link */
+.menu a.active {
     color: gray;
-  }
+}
 
-.avatar{
-    background-image: url('.../img/logo.jpg');
+.logo{
+    padding-top: 5px;
+    padding-left: 40px;
+    float: left;
+    height: 103px;
+    width: 103px;
+    overflow: hidden;
+    background-repeat: no-repeat;
 }
 
 main{

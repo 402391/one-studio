@@ -1,120 +1,143 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>One Studio</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <title>One Studio</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="slick/slick.css">
 </head>
 
 <body>
-    <!--Header-->
-    <header>
-        <!--Logo-->
-        <div class="logo">
-            <img src="img/logo.jpg">
+  <!--Header-->
+  <header>
+      <!--Logo-->
+      <div class="logo">
+          <img src="img/logo.jpg">
+      </div>
+      <!--Top menu-->
+      <div class="menu">
+          <a href="#kontakt">KONTAKT</a>
+          <a href="#projekty">PROJEKTY</a>
+          <a href="#oferta">OFERTA</a>
+          <a class="active" href="#studio">STUDIO</a>
         </div>
-        <!--Top menu-->
-        <div class="menu">
-            <a href="#kontakt">KONTAKT</a>
-            <a href="#projekty">PROJEKTY</a>
-            <a href="#oferta">OFERTA</a>
-            <a class="active" href="#studio">STUDIO</a>
-          </div>
-    </header>
-    <!--Main-->
-    <main>
-
-        <!--Slideshow-->
-        <div class="slideshow middle">
-
-            <div class="slides">
-                <!--
-                <input type="radio" name="r" id="r1" checked>
-                <input type="radio" name="r" id="r2">
-                <input type="radio" name="r" id="r3">
-                <input type="radio" name="r" id="r4">
-                <input type="radio" name="r" id="r5">
-                <input type="radio" name="r" id="r6">
-                <input type="radio" name="r" id="r7">
-
-                <div class="slide s1">
-                    <img src="img/5.jpg" alt="">
-                </div>
-
-                <div class="slide">
-                    <img src="img/6.jpg" alt="">
-                </div>
-
-                <div class="slide">
-                    <img src="img/" alt="">
-                </div>
-
-                <div class="slide">
-                    <img src="img/" alt="">
-                </div>
-
-                <div class="slide">
-                    <img src="img/" alt="">
-                </div>
-
-                <div class="slide">
-                    <img src="img/" alt="">
-                </div>
-
-                <div class="slide">
-                    <img src="img/" alt="">
-                </div>-->
-            </div>
-
-        </div>
-
-        <!--First Box-->
-        <div>
-            <h1><a id="#studio"></a>STUDIO</h1>
-            <p>
-                ONE STUDIO to zespół, który stworzyła absolwentka Wydziału Architektury Politechniki Krakowskiej.
-                Nina Szumny wraz ze znakomitymi dyplomowananymi grafikami. Idealna współpraca w 
-                ONE STUDIO owocuje dopasowanym do potrzeb kielnta rozwiazaniem projektowym.
-            </p>
-
-            <p>
-                Ofertę dla Państwa przygotowujemy indywidualnie, każdorazowo tak aby odpowiadała 
-                założeniom projektowym i przeznaczonemu budżetowi.
-            </p>
-
-            <p>
-                Najnowsze trendy i potrzeby klientów staramy się łączyć w funkcjonalną całość. 
-                Wiele inspiracji przynoszą targi w kraju i zagranica. Bieżące informacje z świata architektury 
-                powodują, że wszystko co jest na czasie jest mocnym fundamentem do rozważnych i 
-                przemyślanych rozwiązań w zakresie projektowania.
-            </p>
-        </div>
-
-        <!--Second Box-->
-        <div>
-            <h2><a id="oferta"></a>OFERTA</h2>
-            <p>Oferujemy współprace na każdym poziomie:</p>
-            <ul>
-                <li>Niewielkie metamorfozy mieszkań</li>
-                <li>Nowe projekty wnętrz mieszkań</li>
-                <li>Projekty wnętrz usługowych</li>
-                <li>Projekty przestrzeni publicznych</li>
-            </ul>
-        </div>
-        <!--Third Box-->
-        <div>
-            <h3><a id="projekty"></a>PROJEKTY</h3>
-
-            <!--Grid gallery-->
-            <div>
-
-            </div>
-        </div>
-
-    </main>
-    <!--Footer-->
-    <footer>
+  </header>
+  <!--Main-->
+  <main>
+    <section class="slider-area slider">
+      <div><img src="img/1.jpg" alt=""></div>
+      <div><img src="img/3.jpg" alt=""></div>
+      <div><img src="img/5.jpg" alt=""></div>
+    </section>
+<!--
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+           Indicators 
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
         
-    </footer>
+           Wrapper for slides 
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/1.jpg" alt="Chania">
+
+              <div class="carousel-caption">
+                <h3></h3>
+              </div>
+            </div>
+        
+            <div class="item">
+              <img src="img/3.jpg" alt="Chicago">
+
+              <div class="carousel-caption">
+                <h3></h3>
+              </div>
+            </div>
+        
+            <div class="item">
+              <img src="img/5.jpg" alt="New York">
+
+              <div class="carousel-caption">
+                <h3></h3>
+              </div>
+            </div>
+
+          </div>
+        
+           Left and right controls 
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      -->
+        
+
+      <!--First Box-->
+      <div>
+          <h1><a id="#studio"></a>STUDIO</h1>
+          <p>
+              ONE STUDIO to zespół, który stworzyła absolwentka Wydziału Architektury Politechniki Krakowskiej.
+              Nina Szumny wraz ze znakomitymi dyplomowananymi grafikami. Idealna współpraca w 
+              ONE STUDIO owocuje dopasowanym do potrzeb kielnta rozwiazaniem projektowym.
+          </p>
+
+          <p>
+              Ofertę dla Państwa przygotowujemy indywidualnie, każdorazowo tak aby odpowiadała 
+              założeniom projektowym i przeznaczonemu budżetowi.
+          </p>
+
+          <p>
+              Najnowsze trendy i potrzeby klientów staramy się łączyć w funkcjonalną całość. 
+              Wiele inspiracji przynoszą targi w kraju i zagranica. Bieżące informacje z świata architektury 
+              powodują, że wszystko co jest na czasie jest mocnym fundamentem do rozważnych i 
+              przemyślanych rozwiązań w zakresie projektowania.
+          </p>
+      </div>
+
+      <!--Second Box-->
+      <div>
+          <h2><a id="oferta"></a>OFERTA</h2>
+          <p>Oferujemy współprace na każdym poziomie:</p>
+          <ul>
+              <li>Niewielkie metamorfozy mieszkań</li>
+              <li>Nowe projekty wnętrz mieszkań</li>
+              <li>Projekty wnętrz usługowych</li>
+              <li>Projekty przestrzeni publicznych</li>
+          </ul>
+      </div>
+      <!--Third Box-->
+      <div>
+          <h3><a id="projekty"></a>PROJEKTY</h3>
+
+          <!--Grid gallery-->
+          <div>
+
+          </div>
+      </div>
+
+  </main>
+  <!--Footer-->
+  <footer>
+      
+  </footer>
+  <script src="/jquery-3.5.1.js"></script>
+  <script src="/slick/slick.js"></script>
+  <script>
+    $(".slider-area").slick({
+        dots: true,
+        infinite: true,
+        variableWidth: false,
+      });
+  </script>
 </body>
+</html>

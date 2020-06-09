@@ -26,17 +26,12 @@
 }
 
 .logo{
-    padding-top: 5px;
-    padding-left: 40px;
+    padding-top: ;
     float: left;
     height: 103px;
     width: 103px;
     overflow: hidden;
     background-repeat: no-repeat;
-}
-
-main{
-    height: 2160px;
 }
 
 body{
@@ -45,6 +40,10 @@ body{
     padding: 0;
     background-color: #000;
     
+}
+
+.slider-area slider{
+    height: 600px;
 }
 
 .slideshow{
@@ -92,7 +91,7 @@ body{
 
   .slider {
       width: 50%;
-      margin: 100px auto;
+      margin: 50px auto;
   }
 
   .slick-slide {

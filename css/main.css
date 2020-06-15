@@ -33,10 +33,6 @@
     background-repeat: no-repeat;
 }
 
-/* a temporary web lenght */
-div.projekty{
-    height: 25cm;
-}
 
 body{
     font-family: 'Nunito', sans-serif;
@@ -113,7 +109,7 @@ body{
 
 
   .slick-slide {
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out .5s;
     opacity: .2;
   }
   
@@ -123,6 +119,42 @@ body{
 
   .slick-current {
     opacity: 1;
+  }
+
+  /* Gallery (projekty) */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
   }
 
 ul{
@@ -141,8 +173,8 @@ h1, h2, h3{
 }
 
 #zdj_oferta{
-    height: 300px;
-    margin: 0 0 0 200px;
+    height: 280px;
+    padding-left: 120px;
     width: auto;
 
 }
@@ -151,7 +183,18 @@ hr{
     border-top: #cccccc;
 }
 
-
+div.studio{
+    margin: 0 0cm;
+}
+div.oferta{
+    margin: 0 0cm;
+}
+div.projekty{
+    margin: 0 0cm;
+}
+div.kontakt{
+    margin: 0 0cm;
+}
 
 p{
     padding: 10px 100px;
@@ -160,4 +203,21 @@ p{
     font-size: 1.25em;
     color: #fff;
     text-align: left;
+}
+
+/*when displayed on a smaller screeens*/
+@media only screen and (min-width: 1000px) {
+    div.studio{
+        margin: 0 10cm;
+    }
+    div.oferta{
+        margin: 0 10cm;
+    }
+    div.projekty{
+        margin: 0 10cm;
+    }
+    div.kontakt{
+        margin: 0 10cm;
+    }
+
 }

@@ -1063,7 +1063,7 @@ function createDisabledPseudo( disabled ) {
 			return elem.disabled === disabled;
 		}
 
-		// Remaining elements are neither :enabled nor :disabled
+		// Resizing elements are neither :enabled nor :disabled
 		return false;
 	};
 }

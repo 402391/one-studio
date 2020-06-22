@@ -20,25 +20,27 @@
     color: grey;
 }
 
-/* Add a color to the active/current link */
-.menu a.active {
-    color: gray;
+
+#logo-place{
+    float: left;
+    padding-left: 10px;
+    padding-top: 7px;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+
 }
 
-.logo{
-    float: left;
-    height: 103px;
-    width: 103px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    border-radius: 80px;
+#logo{
+    border: solid;
     border-color: #fff;
     border-width: 2px;
+    border-radius: 50px;
 }
 
 
 body{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000;
@@ -209,7 +211,7 @@ p{
     text-align: left;
 }
 
-/*when displayed on a smaller screeens*/
+/*when displayed on a bigger screeens*/
 @media only screen and (min-width: 1000px) {
     div.studio{
         margin: 0 10cm;
@@ -222,6 +224,14 @@ p{
     }
     div.kontakt{
         margin: 0 10cm;
+    }
+
+    #logo-place{
+      padding-left: 300px;
+    }
+
+   .menu {
+      padding-right: 300px;
     }
 
 }

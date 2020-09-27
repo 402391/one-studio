@@ -3,7 +3,24 @@
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+#logo-place{
+    float: left;
+    padding-left: 10px;
+    padding-top: 7px;
+    height: 100px;
+    width: 100px;
+    background-position: center;
+  
+}
+
+#logo{
+   border: solid;
+   border-color: #fff;
+   border-width: 2px;
+   border-radius: 50px;
+}
+
+/* Style the links inside the bar */
 .menu a {
     padding: 45px 10px;
     float: right;
@@ -15,28 +32,21 @@
     font-size: 18px;
 }
 
+#hamburger{
+  display: none;
+  float: right;
+}
+
+a{
+  color: #fff;
+}
+
 /* Change the color of links on hover */
 .menu a:hover {
     color: grey;
 }
 
 
-#logo-place{
-    float: left;
-    padding-left: 10px;
-    padding-top: 7px;
-    height: 100px;
-    width: 100px;
-    background-position: center;
-
-}
-
-#logo{
-    border: solid;
-    border-color: #fff;
-    border-width: 2px;
-    border-radius: 50px;
-}
 
 
 body{
@@ -62,6 +72,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
 
 .navigation{
     position: absolute;
@@ -105,11 +117,12 @@ body{
 
   .slick-slide img {
     width: 100%;
+    vertical-align: middle;
   }
 
   .slick-prev:before,
   .slick-next:before {
-    color: black;
+    color: #fff;
   }
 
 
@@ -145,15 +158,8 @@ body{
     vertical-align: middle;
     width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
+
+
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
@@ -162,9 +168,39 @@ body{
     }
   }
 
+  @media screen and (max-width: 760px) {
+    .menu{
+      display: none;
+    }
+    #logo-place{
+      float: none;
+    }
+
+    #hamburger{
+      display: table;
+      float: right;
+    }
+
+    #zdj_oferta{
+      height: 280px;
+      padding-left: px;
+      width: 80%;
+      float: none;
+    }
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+
 ul{
-    margin-top: 80px;
-    padding-left: 120px;
+    margin-top: 10px;
+    padding-left: 30px;
     font-size: 1.2em;
     color: #fff;
     float: left;
@@ -180,7 +216,7 @@ h1, h2, h3{
 
 #zdj_oferta{
     height: 280px;
-    padding-left: 120px;
+    padding-left: px;
     width: auto;
 
 }
@@ -203,9 +239,9 @@ div.kontakt{
 }
 
 p{
-    padding: 10px 100px;
-    margin-block-end: 0;
-    margin-block-start: 0;
+    padding: 5px 10px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
     font-size: 1.25em;
     color: #fff;
     text-align: left;
@@ -213,25 +249,45 @@ p{
 
 /*when displayed on a bigger screeens*/
 @media only screen and (min-width: 1000px) {
-    div.studio{
-        margin: 0 10cm;
-    }
-    div.oferta{
-        margin: 0 10cm;
-    }
-    div.projekty{
-        margin: 0 10cm;
-    }
-    div.kontakt{
-        margin: 0 10cm;
+
+    #logo{
+      border: solid;
+      border-color: #fff;
+      border-width: 2px;
+      border-radius: 50px;
+  }
+    #logo-place{
+      padding-left: 50px;
     }
 
-    #logo-place{
-      padding-left: 300px;
+    #menu{
+      padding-right: 50px;
+    }
+
+    .studio{
+      padding-top: 50px;
+    }
+
+    .oferta{
+      padding-top: 100px;
+    }
+
+    .projekty{
+      padding-top: 100px;
+    }
+    
+    p{
+      padding: 20px 150px;
+    }
+
+    ul{
+      margin-top: 80px;
+      padding-left: 150px;
+      padding-right: 100px;
     }
 
    .menu {
-      padding-right: 300px; 
+      padding-right: 50px; 
     }
 
 }
